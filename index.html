@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css" class="css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main class="card">
+      <div class="details-container">
+        <div class="tittle-container">
+          <h1 class="title">Rock<br />paper<br />scissors</h1>
+        </div>
+        <div class="score">
+          <p>user score :<span id="user-score" >0</span></p>
+          <p >comp score :<span id="comp-score">0</span></p>
+        </div>
+      </div>
+      <div class="game-icons">
+        <button class="btn-1 btn-rock" onclick="playGame('rock')">
+          <i class="fa-regular fa-hand-back-fist"></i>
+        </button>
+        <button class="btn-1 btn-paper" onclick="playGame('paper')">
+          <i class="fa-sharp fa-solid fa-hand"></i>
+        </button>
+        <button class="btn-1 btn-scissors" onclick="playGame('scissors')">
+          <i class="fa-sharp fa-solid fa-hand-scissors"></i>
+        </button>
+      </div>
+      <div class="para" id="result-container">
+        <p class="user-choice" id="user-choice"> you choose rock</p>
+        <p class="comp-choice" id="comp-choice">comp choose the paper</p>
+        <p class="result" id="result">you won</p>
+        
+      </div>
+    </main>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
